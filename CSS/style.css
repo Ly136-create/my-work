@@ -60,7 +60,7 @@ header {
   background-color: black;
   color: white;
   width: 100%;
-  flex: 1;
+  flex: 0.5;
   display: flex;
   justify-content: center;
 }
@@ -291,7 +291,7 @@ input {
 .sec-4 {
   /* background-color: rgb(249, 249, 249); */
   color: black;
-  flex: 1;
+  flex: 0.5;
   display: flex;
 }
 
@@ -355,7 +355,7 @@ input {
   /* background-color: black; */
   margin: 40px;
   color: black;
-  flex: 1.5;
+  flex: 1;
 }
 
 .sec5-top {
@@ -387,13 +387,18 @@ input {
   display: flex;
 }
 
-.box-1, .box-2, .box-3 {
+.box-1,
+.box-2,
+.box-3 {
   /* background-color: #666; */
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.box-1 h1, .box-2 h1, .box-3 h1{
+
+.box-1 h1,
+.box-2 h1,
+.box-3 h1 {
   background-color: #fce1e98a;
   color: red;
   padding: 20px;
@@ -404,47 +409,254 @@ input {
   align-content: center;
   align-self: center;
 }
-.box-1 h3, .box-1 p,
-.box-2 h3, .box-2 p,
-.box-3 h3, .box-3 p{
+
+.box-1 h3,
+.box-1 p,
+.box-2 h3,
+.box-2 p,
+.box-3 h3,
+.box-3 p {
   text-align: center;
 }
 
 /* sec 5 end */
 
+/* sec 6 start */
 .sec-6 {
   /* background-color: rgb(250, 250, 250); */
   color: black;
-  flex: 1;
+  flex: 0.5;
   display: flex;
   flex-direction: column;
 }
-.header{
-  background-color: #ddd;
+
+.header {
+  /* background-color: #ddd; */
   margin: 0px 50px;
   flex: 0;
+  text-align: center;
 }
-.sec6-box{
+
+.header h1 {
+  margin: 10px;
+}
+
+.sec6-box {
   /* background-color: #666; */
   margin: 50px;
-  flex: 1;
+  flex: 0;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 
-  "box1 box2"
-  "box3 box4";
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4";
 }
 
 .sec6-box .box1,
 .sec6-box .box2,
 .sec6-box .box3,
-.sec6-box .box4{
-  border: 1px solid black;
+.sec6-box .box4 {
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.sec-7 {
-  background-color: black;
-  color: white;
-  flex: 4;
+.box1 .sec6-mobile,
+.box2 .sec6-desktop,
+.box3 .sec6-mutiple,
+.box4 .sec6-integrations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
+
+.sec6-mobile .icon i,
+.sec6-desktop .icon i,
+.sec6-mutiple .icon i,
+.sec6-integrations .icon i {
+  background-color: #ebf2fa;
+  color: rgb(183, 178, 178);
+  border-radius: 10px;
+  font-size: 60px;
+  margin: 5px;
+
+  width: 60px;
+  height: 50px;
+}
+
+/* .sec6-mobile .text,
+.sec6-desktop .text,
+.sec6-mutiple .text,
+.sec6-integrations .text {
+   margin-top: 0px; 
+} */
+
+/* sec 6 end */
+
+/* sec 7 start */
+.sec-7 {
+  /* background-color: black; */
+  color: #2b2d42;
+  flex: 1;
+}
+
+.question {
+  /* background-color: #ddd; */
+  margin: 50px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "qu-1 qu-2"
+    "qu-3 qu-4"
+    "qu-5 qu-6";
+}
+
+.qu-1,
+.qu-2,
+.qu-3,
+.qu-4,
+.qu-5,
+.qu-6 {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+}
+.qu-icon{
+  display: flex;
+  justify-content: space-between;
+}
+.qu-icon i{
+  background-color: #f8f7ff;
+  color: #070707;
+  border-radius: 10px;
+  gap: 30px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+
+}
+.qu-1 {
+  grid-area: qu-1;
+}
+
+.qu-2 {
+  grid-area: qu-2;
+}
+
+.qu-3 {
+  grid-area: qu-3;
+}
+
+.qu-4 {
+  grid-area: qu-4;
+}
+
+.qu-5 {
+  grid-area: qu-5;
+}
+
+.qu-6 {
+  grid-area: qu-6;
+}
+
+/* sec 7 end */
+
+/* footer start */
+.footer {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #fff;
+  padding: 20px 40px;
+  /* display: flex; */
+}
+
+.footer-top {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.new-badge {
+  display: inline-block;
+  background: black;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.footer-lang {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.footer-lang a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-lang a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  color: #555;
+}
+
+/* footer end */
