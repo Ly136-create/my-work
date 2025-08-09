@@ -22,7 +22,6 @@ header {
 }
 
 .nav-lef {
-  /* padding: 20px; */
   margin: 40px;
 }
 
@@ -33,7 +32,6 @@ header {
 }
 
 .nav-right {
-  /* padding-right: 50px; */
   margin: 40px;
   gap: 20px;
   display: flex;
@@ -60,14 +58,12 @@ header {
   background-color: black;
   color: white;
   width: 100%;
-  flex: 0.5;
+  flex: 0;
   display: flex;
-  justify-content: center;
+  justify-content: centers;
 }
 
 .sec1-left {
-  /* background-color: aqua; */
-  /* margin: 30px 0px 30px 30px; */
   flex: 2;
   padding: 60px;
   gap: 30px;
@@ -97,7 +93,6 @@ header {
 }
 
 .sec1-right {
-  /* background-color: rgb(182, 238, 238); */
   margin: 30px 30px 30px 0px;
   flex: 2;
 }
@@ -172,7 +167,7 @@ input {
 .sec-2 {
   background-color: white;
   color: #070707;
-  padding: 40px 20px;
+  padding: 40px 35px;
   font-family: Arial, sans-serif;
 }
 
@@ -185,18 +180,15 @@ input {
 
 .information {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  /* flex-wrap: wrap; */
-  /* max-width: 1200px; */
+  justify-content: space-between;
+  gap: 50px;
   margin: 0 auto;
 }
 
 .testimonial1 {
   background-color: white;
-  width: 300px;
+  width: 200px;
   padding: 20px;
-  /* border-left: 1px solid #ddd; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -242,11 +234,11 @@ input {
 
 /* Container section */
 .sec-3 {
+  flex: 0.2;
   display: flex;
   gap: 60px;
   padding: 60px 20px;
   background-color: white;
-  /* text-align: center; */
   font-family: 'Arial', sans-serif;
 }
 
@@ -289,9 +281,8 @@ input {
 
 /* sec 4 start */
 .sec-4 {
-  /* background-color: rgb(249, 249, 249); */
   color: black;
-  flex: 0.5;
+  flex: 0.2;
   display: flex;
 }
 
@@ -318,7 +309,6 @@ input {
   width: 360px;
   gap: 20px;
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .get-talk button {
@@ -339,7 +329,6 @@ input {
   margin-right: 40px;
   flex: 2;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -352,16 +341,16 @@ input {
 
 /* sec 5 start */
 .sec-5 {
-  /* background-color: black; */
   margin: 40px;
   color: black;
-  flex: 1;
+  flex: 0.2;
 }
 
 .sec5-top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .sec5-top h1 {
@@ -374,7 +363,6 @@ input {
 }
 
 .sec5-top p {
-  /* background-color: #555; */
   text-align: center;
   width: 670px;
   margin: 5px;
@@ -423,17 +411,14 @@ input {
 
 /* sec 6 start */
 .sec-6 {
-  /* background-color: rgb(250, 250, 250); */
   color: black;
-  flex: 0.5;
+  flex: 0.3;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  /* background-color: #ddd; */
   margin: 0px 50px;
-  flex: 0;
   text-align: center;
 }
 
@@ -442,15 +427,29 @@ input {
 }
 
 .sec6-box {
-  /* background-color: #666; */
   margin: 50px;
-  flex: 0;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "box1 box2"
     "box3 box4";
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
 }
 
 .sec6-box .box1,
@@ -480,29 +479,19 @@ input {
   border-radius: 10px;
   font-size: 60px;
   margin: 5px;
-
   width: 60px;
   height: 50px;
 }
-
-/* .sec6-mobile .text,
-.sec6-desktop .text,
-.sec6-mutiple .text,
-.sec6-integrations .text {
-   margin-top: 0px; 
-} */
 
 /* sec 6 end */
 
 /* sec 7 start */
 .sec-7 {
-  /* background-color: black; */
   color: #2b2d42;
-  flex: 1;
+  flex: 0.2;
 }
 
 .question {
-  /* background-color: #ddd; */
   margin: 50px;
   gap: 20px;
   display: grid;
@@ -524,11 +513,13 @@ input {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 20px;
 }
-.qu-icon{
+
+.qu-icon {
   display: flex;
   justify-content: space-between;
 }
-.qu-icon i{
+
+.qu-icon i {
   background-color: #f8f7ff;
   color: #070707;
   border-radius: 10px;
@@ -538,8 +529,8 @@ input {
   padding: 10px;
   text-align: center;
   align-content: center;
-
 }
+
 .qu-1 {
   grid-area: qu-1;
 }
@@ -572,23 +563,23 @@ input {
   color: #333;
   background: #fff;
   padding: 20px 40px;
-  /* display: flex; */
+
 }
 
 .footer-top {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-column h4 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .footer-column ul {
   list-style: none;
+  font-size: 15px;
   padding: 0;
   margin: 0;
 }
